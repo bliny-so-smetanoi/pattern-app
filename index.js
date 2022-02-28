@@ -10,6 +10,12 @@ const PORT = config.get('port')
 app.use(express.json({extended: true}))
 app.use('/api/patterns', require('./routes/patterns-routes'))
 
+if(process.env.NODE_ENV === 'production') {
+    app.get('*', (req, res) => {
+
+    })
+}
+
 async function start() {
     try{
         console.log('Initializing the server...')
