@@ -5,7 +5,7 @@ const path = require('path')
 const ip = require('ip')
 
 const app = express()
-const PORT = config.get('port')
+const PORT = process.env.PORT || config.get('port')
 
 app.use(express.json({extended: true}))
 app.use('/api/patterns', require('./routes/patterns-routes'))
