@@ -23,9 +23,9 @@ Get started
 Required environment:\
 node v16.13.0\
 npm 8.1.0
-####Install all dependencies:
+### Install all dependencies:
 ### `npm install`
-####Available scripts:
+### Available scripts:
 ### `npm run dev`
 Runs the application in development mode.
 ### `npm run start`
