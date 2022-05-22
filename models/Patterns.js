@@ -5,7 +5,8 @@ const schema = new Schema({
     name: {type: String, required: true},
     description: {type: String, required: true},
     features: [String],
-    image: {type: String}
+    image: {type: String},
+    link: {type: String}
 }, {versionKey: false})
 
 module.exports = model('Patterns', schema)
